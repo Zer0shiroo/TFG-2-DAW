@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Open+Sans&display=swap');
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background: linear-gradient(to bottom, #e0f7fa, #ffffff);
+    background-image: url('https://www.transparenttextures.com/patterns/paper-fibers.png');
+    color: #2b3a42;
+    margin: 0;
+    padding: 2rem;
+}
+
+.container {
+    max-width: 750px;
+    margin: auto;
+    background-color: #ffffff;
+    padding: 2.5rem;
+    border-radius: 18px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    background-image: url('https://www.transparenttextures.com/patterns/canvas-fabric.png');
+    border: 2px solid #b3e5fc;
+}
+
+h1 {
+    font-family: 'Playfair Display', serif;
+    color: #01579b;
+    text-align: center;
+    margin-bottom: 2.5rem;
+    font-size: 2.5rem;
+    text-shadow: 1px 1px 2px #b3e5fc;
+}
+
+label {
+    display: block;
+    margin-top: 1.3rem;
+    margin-bottom: 0.4rem;
+    font-weight: 600;
+    color: #004d40;
+    font-size: 1.05rem;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="file"],
+select,
+textarea {
+    width: 100%;
+    padding: 0.9rem 1rem;
+    margin-top: 0.2rem;
+    border: 1px solid #81d4fa;
+    border-radius: 10px;
+    font-size: 1rem;
+    background-color: #ffffff;
+    box-sizing: border-box;
+    color: #004d40;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+button {
+    background-color: #0288d1;
+    color: #fff;
+    padding: 0.85rem 2rem;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #0277bd;
+}
+
+.volver-btn {
+    display: inline-block;
+    margin-left: 1rem;
+    text-decoration: none;
+    background-color: #b0bec5;
+    color: white;
+    padding: 0.85rem 1.6rem;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.volver-btn:hover {
+    background-color: #90a4ae;
+}
+
+.alerta-error {
+    background-color: #ffecec;
+    color: #d32f2f;
+    padding: 1rem 1.2rem;
+    border-radius: 10px;
+    margin-bottom: 1.5rem;
+    border: 1px solid #ffcdd2;
+    font-size: 0.95rem;
+}
+
+.alerta-error ul {
+    margin: 0;
+    padding-left: 1.2rem;
+}
+
+.botones {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}

@@ -1,0 +1,193 @@
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+   
+
+}
+
+.usuario {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    position: relative;
+}
+
+.saludo {
+    margin-right: 10px;
+    color: white;
+}
+
+.usuario img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 2px solid white;
+}
+
+/* Menú desplegable (inicialmente oculto) */
+.menu-desplegable {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: #f8f9fa;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    z-index: 999;
+}
+
+.menu-desplegable a,
+.menu-desplegable form {
+    margin-bottom: 10px;
+    color: #333;
+    text-decoration: none;
+}
+
+.menu-desplegable button.cerrarsesion {
+    background: none;
+    border: none;
+    color: #d9534f;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* Mostrar el menú cuando tenga la clase activa */
+.menu-desplegable.active {
+    display: flex;
+}
+
+/* Botón login si el usuario no está autenticado */
+.boton-login {
+    background-color: #457b9d;
+    color: white;
+    padding: 6px 12px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.boton-login:hover {
+    background-color: #1d3557;
+}
+
+
+
+.navbar {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    background: rgba(0, 30, 50, 0.6); /* Azul profundo translúcido */
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+.navbar-container {
+    margin: auto;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: #aef2ff;
+    font-size: 1.6rem;
+    font-weight: bold;
+    text-decoration: none;
+    text-shadow: 1px 1px 4px #002;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.nav-links li a::after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background: #aef2ff;
+    left: 0;
+    bottom: -5px;
+    transition: width 0.3s ease;
+}
+
+.nav-links li a:hover::after {
+    width: 100%;
+}
+
+.nav-links li a:hover {
+    color: #113036;
+}
+
+.nav-acciones {
+    display: flex;
+    align-items: center;
+}
+.menu-item-con-submenu {
+    position: relative;
+}
+
+.menu-item-con-submenu .submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.95);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    padding: 10px 0;
+    z-index: 999;
+    min-width: 220px;
+    flex-direction: column;
+}
+
+.menu-item-con-submenu:hover .submenu {
+    display: flex;
+}
+
+.menu-item-con-submenu .submenu a {
+    color: #001f3f;
+    padding: 10px 20px;
+    text-decoration: none;
+    white-space: nowrap;
+    transition: background-color 0.2s;
+    font-weight: 500;
+}
+
+.logo-img {
+    height: 80px;        /* Ajusta el tamaño del logo */
+    object-fit: contain; /* Mantiene proporción sin deformar */
+    display: block;
+}
+
+
+.navbar-container {
+    height: 70px; /* o el valor que tenías antes */
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+

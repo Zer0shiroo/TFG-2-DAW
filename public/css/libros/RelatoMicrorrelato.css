@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Open+Sans&display=swap');
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background: linear-gradient(to bottom, #e0f7fa, #ffffff);
+    margin: 0;
+    padding-top: 70px;
+    color: #2b3a42;
+    background-image: url('https://www.transparenttextures.com/patterns/paper-fibers.png');
+}
+
+h2 {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 3rem;
+    font-family: 'Playfair Display', serif;
+    color: #01579b;
+    text-shadow: 1px 1px 2px #b3e5fc;
+}
+
+a.btn {
+    display: block;
+    text-align: center;
+    margin: 10px auto;
+    text-decoration: none;
+    padding: 10px 18px;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+
+
+.crear-btn {
+    color: #1d3557;
+    text-decoration: none;
+}
+.crear-btn:hover {
+    text-decoration: underline;
+
+}
+
+.buscador {
+    display: flex;
+    justify-content: center;
+    margin: 30px auto;
+    background-color: #e0f2f1;
+    padding: 12px 20px;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    width: fit-content;
+}
+
+.buscador input[type="text"] {
+    padding: 12px;
+    width: 300px;
+    font-size: 1rem;
+    border: 1px solid #81d4fa;
+    border-radius: 10px 0 0 10px;
+    background-color: #ffffff;
+    color: #004d40;
+}
+
+.buscador button {
+    padding: 12px 20px;
+    font-size: 1rem;
+    border: none;
+    background-color: #0288d1;
+    color: white;
+    cursor: pointer;
+    border-radius: 0 10px 10px 0;
+    transition: background-color 0.3s ease;
+}
+.buscador button:hover {
+    background-color: #0277bd;
+}
+
+
+.decor-left {
+    left: 0;
+    background-image: url('https://cdn-icons-png.flaticon.com/512/3467/3467424.png');
+}
+.decor-right {
+    right: 0;
+    background-image: url('https://cdn-icons-png.flaticon.com/512/616/616408.png');
+}
+
+.libros-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 30px;
+    padding: 40px 30px;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.libro {
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #b3e5fc;
+    background-image: url('https://www.transparenttextures.com/patterns/canvas-fabric.png');
+}
+
+
+.libro img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-bottom: 1px solid #b3e5fc;
+}
+
+.libro h3 {
+    padding: 12px 15px 0;
+    margin: 0;
+    font-size: 1.3rem;
+    color: #0277bd;
+    font-family: 'Playfair Display', serif;
+}
+
+.libro p {
+    padding: 8px 15px 0;
+    margin: 0;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+.btn.ver-mas {
+    margin-top: auto;
+    background-color: #4fc3f7;
+    color: white;
+    border-radius: 0 0 15px 15px;
+    font-size: 0.95rem;
+}
+.btn.ver-mas:hover {
+    background-color: #039be5;
+}
+
+.btn.editar-btn {
+    margin-top: 8px;
+    background-color: #2c7a7b;
+    color: white;
+}
+.btn.editar-btn:hover {
+    background-color: #215f60;
+}
+
+.libro-footer {
+    padding: 12px;
+    background-color: #e1f5fe;
+    text-align: center;
+    border-top: 1px solid #b3e5fc;
+}
+
+.libros-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 30px;
+    padding: 40px 30px;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.libros {
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #bbdefb;
+    background-image: url('https://www.transparenttextures.com/patterns/paper-fibers.png');
+}
+.libros:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.libros img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-bottom: 1px solid #bbdefb;
+}
+
+.libros-contenido {
+    padding: 15px;
+    flex-grow: 1;
+}
+
+.libros h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.4rem;
+    color: #01579b;
+}
+
+.libros p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    color: #333;
+}

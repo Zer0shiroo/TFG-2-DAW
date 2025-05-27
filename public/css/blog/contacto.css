@@ -1,0 +1,96 @@
+body {
+    margin: 0;
+    font-family: 'Georgia', serif;
+    background-color: #fdfaf6;
+    color: #2e2e2e;
+}
+
+.seccion-contacto {
+    padding: 100px 20px;
+    background: linear-gradient(to bottom, #aef2ff, #aef2ff);
+    background-image: url('https://www.transparenttextures.com/patterns/paper-fibers.png');
+}
+
+.contacto-contenido {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    align-items: center;
+    justify-content: space-between;
+    animation: fadeIn 1.5s ease;
+}
+
+.contacto-texto {
+    flex: 1 1 500px;
+    padding: 10px 20px;
+}
+
+.contacto-texto h2 {
+    font-size: 2.8rem;
+    color: #8b5e3c;
+    margin-bottom: 25px;
+    border-left: 8px solid #e7c499;
+    padding-left: 15px;
+    font-family: 'Playfair Display', serif;
+}
+
+.contacto-texto p {
+    font-size: 1.2rem;
+    line-height: 1.9;
+    margin-bottom: 18px;
+    color: #4a3f35;
+}
+
+.contacto-texto p i {
+    color: #b98361;
+    margin-right: 10px;
+}
+.contacto-imagen {
+    flex: 1 1 400px;
+    text-align: center;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contacto-imagen img {
+    width: 100%;
+    max-width: 320px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+    border: 6px solid #e9dac4;
+    background-color: #fffdf9;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.contacto-imagen img:hover {
+    transform: scale(1.02);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+}
+
+body {
+    padding-bottom: 80px;
+}
+
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+
+@media (max-width: 768px) {
+    .contacto-contenido {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .contacto-texto h2 {
+        font-size: 2.2rem;
+    }
+}

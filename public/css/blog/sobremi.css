@@ -1,0 +1,68 @@
+/* === RESET Y BASE === */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f4;
+    color: #1d3557;
+    margin: 0;
+    padding: 100px 20px 40px;
+    line-height: 1.6;
+}
+
+/* === CONTENEDOR PRINCIPAL === */
+.sobremi {
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+}
+
+/* === TÍTULO === */
+.sobremi__titulo {
+    font-size: 2.5rem;
+    margin-bottom: 25px;
+    color: #1d3557;
+    border-left: 6px solid #aef2ff;
+    padding-left: 15px;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.05);
+}
+
+/* === TEXTO === */
+.sobremi__texto {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    max-width: 800px;
+}
+
+/* === IMAGEN === */
+.sobremi__foto {
+    max-width: 280px;
+    width: 100%;
+    height: auto;
+    border-radius: 16px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+    margin-top: 25px;
+    transition: transform 0.3s ease;
+    display: block;
+}
+
+.sobremi__foto:hover {
+    transform: scale(1.03);
+}
+
+/* === RESPONSIVE === */
+@media (max-width: 768px) {
+    .sobremi {
+        padding: 30px 20px;
+    }
+
+    .sobremi__titulo {
+        font-size: 2rem;
+    }
+
+    .sobremi__foto {
+        max-width: 100%;
+    }
+}

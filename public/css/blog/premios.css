@@ -1,0 +1,147 @@
+/* Paleta fría estilo navbar */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    background-color: #e9f0f2;
+    color: #1c2c35;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(to right, #5a6d75, #6c7f88);
+    padding: 3rem 2rem;
+    text-align: center;
+    transition: opacity 0.6s ease-in-out;
+    opacity: 0;
+    color: #ffffff;
+}
+
+.hero.visible {
+    opacity: 1;
+}
+
+.hero-content h1 {
+    font-size: 3.2rem;
+    margin: 0.5rem 0;
+    color: #ffffff;
+}
+
+.hero-content h1 span {
+    color: #aef2ff;
+    font-weight: bold;
+}
+
+.hero-content .disponible {
+    font-size: 1.2rem;
+    color: #dce9ed;
+}
+
+/* Sección Premios */
+.seccion-oscura {
+    background-color: #f4f9fb;
+    padding: 4rem 2rem;
+}
+
+.bloque {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 4rem;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.bloque.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.bloque .texto {
+    flex: 1 1 500px;
+    max-width: 600px;
+    padding: 1rem 2rem;
+}
+
+.bloque .texto h2 {
+    font-size: 2rem;
+    color: #1c2c35;
+    margin-bottom: 1rem;
+}
+
+.bloque .texto p,
+.bloque .texto ul li {
+    font-size: 1.05rem;
+    line-height: 1.8;
+    color: #2a3c45;
+}
+
+.bloque .texto ul {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 1rem;
+}
+
+.bloque .texto ul li {
+    margin-bottom: 0.8rem;
+    padding-left: 1rem;
+    position: relative;
+}
+
+.bloque .texto ul li::before {
+    content: "🏅";
+    position: absolute;
+    left: 0;
+}
+
+/* Imagen */
+.marco {
+    flex: 1 1 400px;
+    max-width: 450px;
+    padding: 1rem;
+    text-align: center;
+}
+
+.marco img {
+    max-width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+/* Footer */
+footer {
+    background-color: #5a6d75;
+    padding: 2rem 1rem;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #f4f4f4;
+}
+
+/* Botón Volver */
+.boton-volver-container {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.boton-volver {
+    background-color: #1c2c35;
+    color: #aef2ff;
+    padding: 0.8rem 2rem;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.boton-volver:hover {
+    background-color: #3b4f5c;
+}

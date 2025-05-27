@@ -1,0 +1,163 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #f2f2f2;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.contenedor {
+    max-width: 800px;
+    margin: 60px auto;
+    background: #ffffff;
+    padding: 40px 30px;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    margin-bottom: 25px;
+    color: #004466;
+}
+
+.imagen-libro {
+    width: 100%;
+    max-height: 500px;
+    object-fit: contain;
+    border-radius: 10px;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.detalle-libro p {
+    font-size: 1rem;
+    margin: 12px 0;
+    color: #555;
+    text-align: left;
+}
+
+.detalle-libro strong {
+    color: #0077aa;
+}
+
+.sinopsis {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    margin-top: 20px;
+    text-align: justify;
+}
+
+.volver {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #0077aa;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    margin-top: 30px;
+}
+
+.volver:hover {
+    background-color: #005f88;
+}
+
+.titulo-comentarios {
+    font-size: 2rem;
+    margin-top: 40px;
+    color: #004466;
+    text-align: left;
+    border-bottom: 2px solid #0077aa;
+    padding-bottom: 10px;
+}
+
+.formulario-comentario {
+    margin-top: 20px;
+    margin-bottom: 40px;
+    text-align: left;
+}
+
+.formulario-comentario textarea {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    resize: vertical;
+    margin-bottom: 12px;
+}
+
+.formulario-comentario button {
+    background-color: #0077aa;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.formulario-comentario button:hover {
+    background-color: #005f88;
+}
+
+.mensaje-login {
+    text-align: left;
+    font-style: italic;
+    margin-bottom: 30px;
+}
+
+.lista-comentarios {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.comentario-card {
+    background-color: #f9f9f9;
+    border-left: 4px solid #0077aa;
+    padding: 16px;
+    border-radius: 8px;
+    text-align: left;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.comentario-header {
+    font-weight: bold;
+    color: #004466;
+    margin-bottom: 6px;
+}
+
+.comentario-cuerpo p {
+    margin: 0;
+    color: #333;
+}
+
+.comentario-footer {
+    margin-top: 10px;
+}
+
+.btn-like {
+    background: none;
+    border: none;
+    color: #0077aa;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 0;
+}
+
+.btn-like:hover {
+    text-decoration: underline;
+}
+
+.me-gusta {
+    font-style: italic;
+    font-size: 0.9rem;
+    color: #009900;
+    margin-left: 5px;
+}

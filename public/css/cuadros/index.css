@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Open+Sans&display=swap');
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    background: linear-gradient(to bottom, #e3f2fd, #ffffff);
+    color: #2b3a42;
+    background-image: url('https://www.transparenttextures.com/patterns/canvas-fabric.png');
+    position: relative;
+}
+
+h2 {
+    text-align: center;
+    margin: 40px 0 20px;
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+    color: #01579b;
+    text-shadow: 1px 1px 2px #bbdefb;
+    position: relative;
+}
+
+h2::after {
+  
+    display: block;
+    font-size: 1.5rem;
+    margin-top: 10px;
+    opacity: 0.6;
+}
+
+a {
+    text-align: center;
+    display: block;
+    margin: 10px auto;
+    font-weight: bold;
+    text-decoration: none;
+    color: #00796b;
+    transition: color 0.3s;
+}
+a:hover {
+    color: #004d40;
+}
+
+.buscador {
+    display: flex;
+    justify-content: center;
+    margin: 30px auto;
+    padding: 15px 25px;
+    background-color: #e0f7fa;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.1);
+    width: fit-content;
+}
+
+.buscador input[type="text"] {
+    padding: 12px;
+    width: 300px;
+    font-size: 1rem;
+    border: 1px solid #81d4fa;
+    border-radius: 10px 0 0 10px;
+    background-color: #ffffff;
+    color: #01579b;
+}
+
+.buscador button {
+    padding: 12px 20px;
+    font-size: 1rem;
+    border: none;
+    background-color: #0288d1;
+    color: white;
+    cursor: pointer;
+    border-radius: 0 10px 10px 0;
+    transition: background-color 0.3s ease;
+}
+.buscador button:hover {
+    background-color: #0277bd;
+}
+
+.decor-left, .decor-right {
+    position: fixed;
+    top: 0;
+    width: 100px;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    opacity: 0.15;
+    z-index: -1;
+}
+.decor-left {
+    left: 0;
+    background-image: url('https://cdn-icons-png.flaticon.com/512/3467/3467424.png');
+}
+.decor-right {
+    right: 0;
+    background-image: url('https://cdn-icons-png.flaticon.com/512/616/616408.png');
+}
+
+.cuadros-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 30px;
+    padding: 40px 30px;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.cuadro {
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #bbdefb;
+    background-image: url('https://www.transparenttextures.com/patterns/paper-fibers.png');
+}
+.cuadro:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.cuadro img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-bottom: 1px solid #bbdefb;
+}
+
+.cuadro-contenido {
+    padding: 15px;
+    flex-grow: 1;
+}
+
+.cuadro h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.4rem;
+    color: #01579b;
+}
+
+.cuadro p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    color: #333;
+}
+
+.cuadro-footer {
+    padding: 12px;
+    background-color: #e1f5fe;
+    text-align: center;
+    border-top: 1px solid #b3e5fc;
+}
+
+.ver-mas {
+    display: inline-block;
+    padding: 10px 18px;
+    background-color: #4fc3f7;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+}
+.ver-mas:hover {
+    background-color: #039be5;
+}
+.editar-btn {
+    display: inline-block;
+    margin-top: 0.5rem;
+    background-color: #2c7a7b;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.editar-btn:hover {
+    background-color: #215f60;
+}
+/* Estilos del header - tomado del blog */
+
+
+
+.sitiooficial {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+
+/* Estilos generales para mantener coherencia visual */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    text-align: center;
+    margin: 20px 0;
+}
+
+a {
+    color: #1d3557;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+.cerrarsesion{
+    width: 100%;
+}
+
+.dropdown-menu a:hover {
+    background: rgba(255, 255, 255, 0.1);
+    padding-left: 25px;
+}
+
+
+body{
+    padding-top: 120px;
+}

@@ -13,7 +13,7 @@
     <h2>Relatos y Microrrelatos</h2>
     @if (Auth::check() && Auth::user()->admin)
 
-    <a class="btn crear-btn" href="{{ route('libros.create') }}">Crear nueva poesía</a>
+    <a class="btn crear-btn" href="{{ route('libros.create') }}">Crear nuevo Relato/Microrrelato</a>
     @endif
     <form class="buscador" method="GET" action="{{ route('RelatoMicrorrelato') }}">
         <input type="text" name="buscar" placeholder="Buscar por título o autor..." value="{{ request('buscar') }}">

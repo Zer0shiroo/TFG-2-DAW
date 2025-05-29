@@ -26,7 +26,7 @@
                 </div>
 
                 <div class="contacto-imagen">
-                    <img src="{{ asset('images/imgcontacto.jpg') }}" alt="Obra artística de Juan Manuel">
+                    <img src="{{ asset('images/fotocontacto.jpg') }}" alt="Obra artística de Juan Manuel">
                 </div>
             </div>
         </main>

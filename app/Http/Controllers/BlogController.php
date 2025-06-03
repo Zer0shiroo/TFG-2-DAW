@@ -8,6 +8,9 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use App\Models\Usuario;    
 use App\Models\Visita;
+use App\Mail\BienvenidaMailable;
+use Illuminate\Support\Facades\Mail;
+
 class BlogController 
 {public function index()
 {
@@ -81,6 +84,14 @@ public function contacto()
 public function sobremi()
 {
     return view('blog.sobremi');
+}
+
+public function enviarCorreo($id)
+{
+    $usuario = Usuario::find($id);
+      Mail::to($usuario->email)->send(new BienvenidaMailable($usuario));
+
+    return 'Correo enviado';
 }
 
 

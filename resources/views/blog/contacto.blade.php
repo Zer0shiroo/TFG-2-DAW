@@ -15,6 +15,8 @@
         <main class="seccion-contacto">
             <div class="contacto-contenido">
                 <div class="contacto-texto">
+                    
+                    
                     <h2>📬 Ponte en contacto</h2>
                     <p><i class="fas fa-envelope"></i> <strong>Email:</strong> juma-peto@hotmail.com</p>
                     <p><i class="fas fa-phone"></i> <strong>Teléfono:</strong> +34 600 123 456</p>

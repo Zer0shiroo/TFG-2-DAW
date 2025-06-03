@@ -6,6 +6,7 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Validator;
 use App\Mail\WelcomeEmail;
 use App\Mail\NewUserNotification;
+use App\Mail\BienvenidaMailable;
 use App\Models\Dispositivo;
 use Illuminate\Support\Facades\Mail;
 
@@ -78,6 +79,9 @@ class AuthController
     // Mail::to('informatica@generalelevadores.com')->send(new NewUserNotification($usuario));
 
     // Redirigir al login después de que el usuario se haya registrado correctamente
+
+        Mail::to($usuario->email)->send(new BienvenidaMailable($usuario));
+
     return redirect()->route('login')->with('success', 'Te has registrado correctamente. Ahora puedes iniciar sesión.');
 }
 

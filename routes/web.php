@@ -74,3 +74,4 @@ Route::post('/comentarios/{comentario}/like', [ComentarioController::class, 'tog
 
 Route::get('/contacto', [BlogController::class, 'contacto'])->name('contacto');
 Route::get('/sobre-mi', [App\Http\Controllers\BlogController::class, 'sobremi'])->name('sobremi');
+Route::get('/correo/{id}', [BlogController::class, 'enviarCorreo']);

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Perfil del Usuario</title>
+    <title>Perfil del Usuario | Blog Juan Manuel Perez Torres</title>
     <link href="{{ asset('css/blog/verperfil.css') }}" rel="stylesheet">
 
 </head>

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Crear nuevo libro</title>
+    <title>Crear nuevo libro | Blog Juan Manuel Perez Torres</title>
     <link href="{{ asset('css/libros/create.css') }}" rel="stylesheet">
 </head>
 <body>

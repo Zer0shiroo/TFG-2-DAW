@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Premios y Reconocimientos - Juan Manuel Pérez Torres</title>
+    <title>Premios y Reconocimientos | Blog Juan Manuel Perez Torres</title>
     <link href="{{ asset('css/blog/premios.css') }}" rel="stylesheet">
 </head>
 <body>

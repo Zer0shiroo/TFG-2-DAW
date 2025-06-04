@@ -1,11 +1,4 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <title>Bienvenida</title>
-    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&family=Roboto&display=swap" rel="stylesheet">
-    <style>
-        body {
+ body {
             background-color: #f4f0ea;
             margin: 0;
             padding: 0;
@@ -65,16 +58,3 @@
                 font-size: 1em;
             }
         }
-    </style>
-</head>
-<body>
-    <div class="carta">
-        <h1>Bienvenido/a, {{ $usuario->nombre }}</h1>
-        <p>Gracias por unirte a este espacio donde el arte y la palabra se entrelazan con alma y propósito.</p>
-        <p>Esta plataforma nace del deseo de compartir las obras y pensamientos de <span class="resalte">Juan Manuel Pérez Torres</span>, y nos honra que decidas formar parte de este viaje.</p>
-        <p>Aquí encontrarás cuadros que hablan sin voz y libros que pintan sin pincel. Estás invitado a explorar con calma, con curiosidad, con el corazón abierto.</p>
-        <p>Si en algún momento necesitas acompañamiento o tienes alguna inquietud, no dudes en contactarme.</p>
-        <p class="firma">Con afecto,<br>Juan Manuel Pérez Torres</p>
-    </div>
-</body>
-</html>

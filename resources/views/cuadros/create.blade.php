@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Crear nuevo cuadro</title>
+    <title>Crear nuevo cuadro | Blog Juan Manuel Perez Torres</title>
     <link href="{{ asset('css/cuadros/create.css') }}" rel="stylesheet">
 </head>
 <body>

@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>{{ $libro->titulo }}</title>
+    <title>{{ $libro->titulo }} | Blog Juan Manuel Perez Torres</title>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Playfair+Display&display=swap" rel="stylesheet">
     <link href="{{ asset('css/libros/show.css') }}" rel="stylesheet">
 </head>

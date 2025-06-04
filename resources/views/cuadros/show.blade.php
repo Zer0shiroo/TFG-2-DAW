@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>{{ $cuadro->titulo }}</title>
+    <title>{{ $cuadro->titulo }} | Blog Juan Manuel Perez Torres</title>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Playfair+Display&display=swap" rel="stylesheet">
     <link href="{{ asset('css/cuadros/show.css') }}" rel="stylesheet">
 </head>

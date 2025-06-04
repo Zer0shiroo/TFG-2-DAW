@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Libros - Poesia</title>
+    <title>Poesia | Blog Juan Manuel Perez Torres</title>
     <link href="{{ asset('css/libros/RelatoMicrorrelato.css') }}" rel="stylesheet">
 </head>
 <body>

@@ -6,7 +6,7 @@
     <link href="{{ asset('css/cuadros/index.css') }}" rel="stylesheet">
 
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Galería de cuadros | Blog Juan Manuel Perez Torres</title>
 </head><body>
 
     @extends('layouts.app')

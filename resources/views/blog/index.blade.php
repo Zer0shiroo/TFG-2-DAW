@@ -77,9 +77,7 @@
                         <p>📊 <strong>Visitas:</strong> {{ $visita->contador }}</p>
                          </div>
                             @endif
-
-
-                
+              
                 </div>
             </div>
 
@@ -184,16 +182,9 @@
         }, 300); 
     });
 
-
-  
-    
+ 
 
 </script>
-
-    
-    
-
-
-    
+ 
 </body>
 </html>

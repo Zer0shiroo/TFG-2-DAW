@@ -9,7 +9,7 @@
 <body>
     @extends('layouts.app')
     
-    <h2>Poesia</h2>
+    <h2>Poesía</h2>
     @if (Auth::check() && Auth::user()->admin)
 
     <a class="btn crear-btn" href="{{ route('libros.create') }}">Crear nueva poesía</a>

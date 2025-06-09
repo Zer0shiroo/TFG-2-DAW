@@ -10,7 +10,6 @@ return new class extends Migration
      */
     public function up(): void
     {
-        // Verificar si la tabla 'sessions' ya existe
         if (!Schema::hasTable('sessions')) {
             Schema::create('sessions', function (Blueprint $table) {
                 $table->string('id')->primary();
@@ -28,7 +27,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        // Eliminar la tabla 'sessions'
         Schema::dropIfExists('sessions');
     }
 };

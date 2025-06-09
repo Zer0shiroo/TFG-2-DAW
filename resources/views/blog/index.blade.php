@@ -108,7 +108,6 @@
             </div>
         </div>
     
-        <!-- BLOQUE 2: PINTURA -->
         <div class="bloque invertido">
             
             <div class="texto">

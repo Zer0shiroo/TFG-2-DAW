@@ -177,14 +177,14 @@ body {
 }
 
 .logo-img {
-    height: 80px;        /* Ajusta el tamaño del logo */
-    object-fit: contain; /* Mantiene proporción sin deformar */
+    height: 80px;    
+    object-fit: contain; 
     display: block;
 }
 
 
 .navbar-container {
-    height: 70px; /* o el valor que tenías antes */
+    height: 70px; 
     
     display: flex;
     justify-content: space-between;

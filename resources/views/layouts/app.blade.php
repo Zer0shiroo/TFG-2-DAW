@@ -9,7 +9,7 @@
     </head>
     <body>
         
-        @include('partials.navbar') {{-- Aquí va el navbar que hicimos --}}
+        @include('partials.navbar')
   
         
         </body>

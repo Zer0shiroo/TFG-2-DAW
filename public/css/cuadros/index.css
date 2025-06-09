@@ -179,7 +179,6 @@ a:hover {
 .editar-btn:hover {
     background-color: #215f60;
 }
-/* Estilos del header - tomado del blog */
 
 
 
@@ -189,7 +188,6 @@ a:hover {
 }
 
 
-/* Estilos generales para mantener coherencia visual */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #f4f4f4;

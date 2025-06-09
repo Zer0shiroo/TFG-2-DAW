@@ -10,7 +10,6 @@ return new class extends Migration
      */
     public function up(): void
     {
-        // Verificar si la tabla 'usuarios' ya existe
         if (!Schema::hasTable('usuarios')) {
             Schema::create('usuarios', function (Blueprint $table) {
                 $table->id();
@@ -29,7 +28,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        // Eliminar la tabla 'usuarios'
         Schema::dropIfExists('usuarios');
     }
 };

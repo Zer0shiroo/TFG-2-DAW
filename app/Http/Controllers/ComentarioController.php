@@ -33,9 +33,9 @@ public function toggleLike($id)
     $user = Auth::user();
 
     if ($comentario->likes()->where('usuario_id', $user->id)->exists()) {
-        $comentario->likes()->detach($user->id); // Quitar like
+        $comentario->likes()->detach($user->id); 
     } else {
-        $comentario->likes()->attach($user->id); // Dar like
+        $comentario->likes()->attach($user->id); 
     }
 
     return back();

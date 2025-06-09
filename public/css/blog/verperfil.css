@@ -13,8 +13,8 @@ body{
     background: rgba(255, 255, 255, 0.05);
     border: 1px solid rgba(255, 255, 255, 0.15);
     border-radius: 20px;
-    padding: 60px; /* más espacio interior */
-    max-width: 700px; /* más ancho */
+    padding: 60px;
+    max-width: 700px; 
     color: white;
     text-align: center;
 }
@@ -130,7 +130,7 @@ padding-bottom: 10px;
     cursor: pointer;
     font-size: 14px;
     transition: background 0.2s ease;
-    display: none; /* Solo aparece en hover */
+    display: none;
 }
 
 .avatar-wrapper:hover .avatar-edit-icon {

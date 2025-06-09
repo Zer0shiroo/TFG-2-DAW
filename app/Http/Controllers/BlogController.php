@@ -14,22 +14,22 @@ use Illuminate\Support\Facades\Mail;
 class BlogController 
 {public function index()
 {
-    // Obtener el primer registro de visitas (o crear uno si no existe)
+   
     $visita = Visita::first();
     if (!$visita) {
-        // Si no existe un registro, creamos uno con contador 1
+        
         $visita = Visita::create(['contador' => 1000]);
     } else {
-        // Si ya existe, incrementamos el contador
+       
         $visita->contador++;
         $visita->save();
     }
 
-    // Obtener los cuadros y libros
+    
     $cuadros = Cuadro::all();
     $libros = Libro::all();
 
-    // Pasar el contador de visitas a la vista junto con los demás datos
+    
     return view('blog.index', compact('cuadros', 'libros', 'visita'));
 }
     public function verPerfil()

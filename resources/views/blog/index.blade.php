@@ -50,6 +50,26 @@
                 <p class="autor">Obras de Juan Manuel Perez Torres</p>
                 <h1><span>Arte y</span>Literatura</h1>
                 <p class="disponible">El arte y literatura son mi busqueda constante</p>
+            
+
+
+            <button class="menu-toggle" onclick="document.querySelector('.mobile-menu').classList.toggle('active')">☰ Obras de Juan Manuel</button>
+
+                <div class="mobile-menu">
+                    <a href="{{ route('cuadros') }}">🖼️ Galería</a>
+
+                    <div class="submenu-container">
+                        <a href="#" class="submenu-trigger" onclick="event.preventDefault(); this.nextElementSibling.classList.toggle('visible')">📖 Literatura ▾</a>
+                        <div class="submenu">
+                            <a href="{{ route('RelatoMicrorrelato') }}">✍️ Relato y Microrrelato</a>
+                            <a href="{{ route('poesia') }}">🎭 Poesía</a>
+                        </div>
+                    </div>
+
+                    <a href="{{ route('premios') }}">⭐ Premios y reconocimientos</a>
+                    <a href="{{ route('sobremi') }}">Sobre mí</a>
+
+                </div>
 
                 <div class="botones">
                     <div class="dropdown">

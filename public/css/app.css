@@ -27,7 +27,6 @@ body {
     border: 2px solid white;
 }
 
-/* Menú desplegable (inicialmente oculto) */
 .menu-desplegable {
     display: none;
     flex-direction: column;
@@ -57,12 +56,10 @@ body {
     font-weight: bold;
 }
 
-/* Mostrar el menú cuando tenga la clase activa */
 .menu-desplegable.active {
     display: flex;
 }
 
-/* Botón login si el usuario no está autenticado */
 .boton-login {
     background-color: #457b9d;
     color: white;
@@ -83,7 +80,7 @@ body {
     top: 0;
     left: 0;
     z-index: 100;
-    background: rgba(0, 30, 50, 0.6); /* Azul profundo translúcido */
+    background: rgba(0, 30, 50, 0.6);
     backdrop-filter: blur(10px);
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
@@ -191,3 +188,48 @@ body {
     align-items: center;
 }
 
+/* Menú hamburguesa para pantallas pequeñas */
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 4px;
+}
+
+.menu-toggle span {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    border-radius: 2px;
+}
+
+/* Ocultar nav-links en móvil por defecto */
+@media (max-width: 768px) {
+    .nav-links {
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background-color: rgba(0, 30, 50, 0.95);
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding: 20px 0;
+        display: none;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+
+    .nav-acciones {
+        display: none;
+    }
+    .usuario{
+        display: none;
+    }
+}

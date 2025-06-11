@@ -38,13 +38,13 @@
             <label for="portada">Portada</label>
             <input type="file" id="portada" name="portada" required>
 
-<label for="tipo">Tipo</label>
-<select name="tipo" id="tipo" required>
-    <option value="">Selecciona un tipo</option>
-    <option value="Relato">Relato</option>
-    <option value="Microrrelato">Microrrelato</option>
-    <option value="Poesía">Poesía</option>
-</select>
+            <label for="tipo">Tipo</label>
+            <select name="tipo" id="tipo" required>
+                <option value="">Selecciona un tipo</option>
+                <option value="Relato">Relato</option>
+                <option value="Microrrelato">Microrrelato</option>
+                <option value="Poesía">Poesía</option>
+            </select>
             
             <div class="botones">
                 <button type="submit">💾 Guardar Libro</button>

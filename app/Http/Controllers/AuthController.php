@@ -121,14 +121,6 @@ public function store(Request $request)
 }
 
 
-public function detallesUsuario($id)
-    {
-        
-        $usuario = Usuario::with('dispositivos')->findOrFail($id);
-
-       
-        return view('auth.detallesUsuario', compact('usuario'));
-    }
 
 }
 

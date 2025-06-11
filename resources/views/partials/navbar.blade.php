@@ -1,4 +1,3 @@
-
 <nav class="navbar">
   <div class="navbar-container">
     <div class="nav-left">
@@ -7,7 +6,6 @@
       </a>
     </div>
 
-    <!-- Botón hamburguesa -->
     <div class="menu-toggle" id="menu-toggle">
       <span></span>
       <span></span>
@@ -52,27 +50,27 @@
     </div>
   </div>
   <script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const toggleBtn = document.getElementById("menu-toggle");
-    const navLinks = document.getElementById("nav-links");
+    document.addEventListener("DOMContentLoaded", function () {
+      const toggleBtn = document.getElementById("menu-toggle");
+      const navLinks = document.getElementById("nav-links");
 
-    toggleBtn.addEventListener("click", function () {
-      navLinks.classList.toggle("active");
+      toggleBtn.addEventListener("click", function () {
+        navLinks.classList.toggle("active");
+      });
     });
-  });
 
-  function toggleMenu() {
-    const menu = document.getElementById("menu-desplegable");
-    menu.classList.toggle("active");
-  }
-
-  document.addEventListener('click', function (e) {
-    const menu = document.getElementById("menu-desplegable");
-    const avatar = document.querySelector(".usuario img");
-    if (!menu.contains(e.target) && !avatar.contains(e.target)) {
-      menu.classList.remove("active");
+    function toggleMenu() {
+      const menu = document.getElementById("menu-desplegable");
+      menu.classList.toggle("active");
     }
-  });
+
+    document.addEventListener('click', function (e) {
+      const menu = document.getElementById("menu-desplegable");
+      const avatar = document.querySelector(".usuario img");
+      if (!menu.contains(e.target) && !avatar.contains(e.target)) {
+        menu.classList.remove("active");
+      }
+    });
 </script>
 
 </nav>

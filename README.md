@@ -1,61 +1,122 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# TFG - Obras de Juan Manuel Pérez Torres
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+**Autor:** Ángel Pérez Gutiérrez  
+**Centro:** IES Gerald Brenan  
+**Ciclo formativo:** Desarrollo de Aplicaciones Web (2º DAW)  
+**Fecha de entrega:** Junio 2025
 
-## About Laravel
+## 📌 Descripción del proyecto
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+Desarrollo de una plataforma web en homenaje a Don Juan Manuel Pérez Torres, figura destacada en Málaga por su trayectoria en el arte y la literatura. El sitio permite mostrar y difundir sus obras pictóricas y literarias, con funcionalidades interactivas para usuarios autenticados.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+Es un proyecto real, personalizado según las peticiones del artista, y desarrollado como Trabajo de Fin de Grado (TFG).
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+---
 
-## Learning Laravel
+## 🎯 Objetivos
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+- Rendir homenaje al artista con una web personalizada.
+- Permitir a usuarios comentar y reaccionar a las obras.
+- Facilitar el uso de la web a personas con poca experiencia informática.
+- Aplicar conocimientos prácticos adquiridos en el ciclo formativo.
+- Crear una web responsive y funcional.
+- Proporcionar al artista una vía para publicar sus obras.
+- Habilitar funciones exclusivas al iniciar sesión (comentarios, likes, etc.).
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+---
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+## 🛠️ Tecnologías utilizadas
 
-## Laravel Sponsors
+- **Frontend:** HTML, CSS, JavaScript
+- **Backend:** PHP con Laravel
+- **Base de datos:** MySQL
+- **Control de versiones:** Git + GitHub
+- **Editor:** Visual Studio Code
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+---
 
-### Premium Partners
+## 🧩 Base de datos
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development/)**
-- **[Active Logic](https://activelogic.com)**
+Tablas principales:
 
-## Contributing
+- **visitas:** seguimiento del contador de visitas.
+- **cuadros:** obras pictóricas (título, descripción, imagen, técnica, etc.).
+- **libros:** obras literarias (relatos, poesía).
+- **comentarios:** comentarios y reacciones a las obras.
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+---
 
-## Code of Conduct
+## 🚀 Uso de la aplicación
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+### Página principal
 
-## Security Vulnerabilities
+- Vista inicial con bienvenida y navegación intuitiva.
+- Contador de visitas simulado (empieza en 1000).
+- Dropdown con acceso a las secciones: galería, literatura, biografía, premios.
+- Avatar y menú desplegable con acceso al perfil o cierre de sesión.
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+### Inicio de sesión / Registro
 
-## License
+- Login para acceder a funciones como comentar o reaccionar.
+- Registro con nombre, correo, contraseña y avatar (opcional).
+- Validación de usuarios contra la base de datos.
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+### Perfil
+
+- Vista para actualizar nombre y avatar.
+- Posibilidad de cerrar sesión.
+
+---
+
+## 🖼️ Galería de cuadros
+
+- Listado visual de cuadros en tarjetas con imagen, título y descripción.
+- Barra de búsqueda por nombre.
+- Vista de detalle con información extendida (técnica, estilo, dimensiones).
+- Usuarios autenticados pueden comentar y reaccionar.
+- Administradores pueden crear y editar cuadros.
+
+---
+
+## 📖 Galería literaria
+
+- Vista dividida entre:
+  - **Poesía**
+  - **Relatos y microrrelatos**
+- Tarjetas de libros con detalles y botones de edición (para administradores).
+- Vista de detalle con comentarios y reacciones (usuarios autenticados).
+- Formularios para crear o editar libros.
+
+---
+
+## 👤 Sobre mí
+
+- Página biográfica del artista: su historia en la escritura y la pintura.
+
+## 🏆 Premios
+
+- Sección con los premios y reconocimientos obtenidos.
+
+## 📬 Contacto
+
+- Enlaces a redes sociales del artista (Instagram, Facebook).
+
+---
+
+## 📚 Bibliografía
+
+- [W3Schools](https://www.w3schools.com)
+- [Stack Overflow](https://stackoverflow.com)
+
+---
+
+## ✅ Conclusión
+
+Este proyecto ha sido una oportunidad de aplicar todos los conocimientos aprendidos durante el ciclo formativo, consolidando habilidades en desarrollo web completo (full stack).  
+Además de cumplir los objetivos académicos, se ha convertido en un regalo personal y profesional para mi padre, quien ahora tiene un espacio digital para compartir su obra artística y literaria con el mundo.
+
+---
+
+## 🔗 Repositorio
+
+[GitHub: Zer0shiroo/TFG-2-DAW](https://github.com/Zer0shiroo/TFG-2-DAW.git)
